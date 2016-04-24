@@ -1,6 +1,5 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var multer = require("multer");
 var methodOverride = require("method-override");
 var path = require("path");
 

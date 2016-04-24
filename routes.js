@@ -1,5 +1,3 @@
-var pgPromise = require('pg-promise')();
-
 module.exports = function ( router ) {
     router.route("/api")
         .get(function (req, res) {
@@ -89,7 +87,7 @@ module.exports = function ( router ) {
             order = order.sort();
 
             // Si el orden tenia que ser descendente le damos la vuelta al arreglo
-            if( !orderType )
+            if( orderType )
                 order = order.reverse();
 
             var arrOder = [];
