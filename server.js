@@ -25,6 +25,6 @@ app.use(methodOverride());
 app.use( routes( router ) );
 
 // Arrancamos la aplicacion
-app.listen(app.get("port"), function () {
+app.listen(app.get("port"), function() {
     console.log(`Server iniciado en http://localhost:${app.get("port")}/`);
 });
